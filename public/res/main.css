@@ -1,0 +1,102 @@
+/* 
+    Created on : Mar 5, 2018, 2:58:34 PM
+    Author     : kali_root
+*/
+html {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    min-height: 100%;
+    font-family: 'Maven Pro', sans-serif;
+    background: #111 url('bg.jpg') no-repeat right center;
+    background-size: cover;
+}
+
+a, a:visited {
+    color: #fff;
+}
+
+a:hover, a:active {
+    color: #81C784;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+main{
+    direction: rtl;
+}
+
+main, footer {
+    color: #fff;
+    padding: 64px;
+    font-size: 16px;
+}
+
+main h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: 8px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    margin-left: -2px;
+}
+
+main p  {
+    max-width: 580px;
+    margin-bottom: 24px;
+}
+.apps{
+    max-width: 580px;    
+}
+main ul {
+    margin-bottom: 24px;
+}
+
+
+@media (max-width: 767px) {
+    main, footer {
+        padding: 40px;
+        font-size: 14px;
+    }
+
+    main h1 {
+        font-size: 36px;
+        letter-spacing: 5px;
+    }
+}
+
+
+
+footer {
+    color: #aaa;
+    font-size: 12px;
+    position : absolute;
+    bottom : 0;
+}
+
+footer p {
+    margin: 0;
+    opacity: 0.5;
+}
+
+
+@media (max-height: 600px) {
+    footer {
+        visibility: hidden;
+    }
+}
+
+
+
+.tag:hover {
+    color: #81C784;
+    cursor: default;
+}
+
+.btn{
+    padding: 0px 0px;
+}

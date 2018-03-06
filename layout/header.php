@@ -1,7 +1,7 @@
 <?php
 
 function printHostName() {
-    echo gethostname();
+    echo $_SERVER['SERVER_NAME'];
 }
 ?>
 <!DOCTYPE html>
@@ -16,12 +16,13 @@ function printHostName() {
         <meta name="google-site-verification" content="TODO">
         <meta name="theme-color" content="#111111">
 
-        <meta name="og:type" content="website">
-        <meta name="og:title" content="<?php printHostName() ?>">
-        <meta name="og:description" content="Joseph Mangmang &ndash; an Android engineer living in Carmen, Bohol, Philippines.">
-        <meta name="og:site_name" content="Joseph Mangmang">
-        <meta name="og:url" content="http://<?php printHostName() ?>">
-        <meta name="og:image" content="http://<?php printHostName() ?>/res/bg.jpg">
+        <!-- Facebook tags -->
+        <meta property="og:type"            content="website" /> 
+        <meta property="og:site_name"       content="Joseph Mangmang">
+        <meta property="og:url"             content="http://<?php printHostName() ?>" /> 
+        <meta property="og:title"           content="Joseph Mangmang &ndash; Android developer" /> 
+        <meta property="og:image"           content="http://<?php printHostName() ?>/res/bg.jpg" /> 
+        <meta property="og:description"    content="Joseph Mangmang &ndash; an Android engineer living in Carmen, Bohol, Philippines." />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700" type="text/css">
